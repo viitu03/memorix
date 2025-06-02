@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: 'Luckiest Guy', cursive;
+    background-color: #D97928;
+}
+
+/* Header */
+
+header {
+    background-color: #F5DAB1;
+    border-bottom: 4px solid #5C2C19;
+    color: #D97928;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+
+.cabecalho img {
+    width: 100px;
+}
+
+.cabecalho button {
+    padding: 8px 20px;
+    background-color: #D97928;
+    color: white;
+    border: solid 3px #5C2C19;
+    border-radius: 50px;
+}
+
+.cabecalho button a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+}
+
+/* Main */
+
+main {
+    background-color: #F5DAB1;
+    margin: 20px 20px;
+    padding: 10px 20px 40px 30px;
+    border: solid 5px #5C2C19;
+    color: #D97928;
+}
+
+.centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #000000;
+    max-height: 470px;
+
+}
+
+.centro img {
+    width: 200px;
+}
+
+.buttons-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons-game button {
+    width: 250px;
+    height: 50px;
+    margin: 10px auto;
+    background-color: #D97928;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 18px;
+    border: solid 3px #5C2C19;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.buttons-game button:hover {
+    background-color: #F2B444;
+}
+
+/* Ajuda */
+.ajuda-wrapper {
+    position: relative;
+    height: 0;
+}
+
+#ajuda-icon {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #D97928;
+    color: white;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #5C2C19;
+    z-index: 10;
+}
+
+
+#ajuda-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#ajuda-modal.active {
+    display: flex;
+}
+
+.ajuda-content {
+    background-color: #F5DAB1;
+    padding: 30px;
+    border-radius: 10px;
+    border: 4px solid #5C2C19;
+    max-width: 500px;
+    color: #D97928;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    position: relative;
+    box-shadow: 0 0 10px #000;
+}
+
+.fechar-ajuda {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #5C2C19;
+}
+
+#lista-dificuldades {
+ 
+    flex-direction: column;
+    align-items: center;
+    margin-top: -3px;
+    display: none; /* agora sim, escondido inicialmente */
+}
+
+#lista-dificuldades.active {
+    display: flex;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.dificuldade-opcao {
+    width: 200px;
+    height: 30px;
+    margin: 3px 0;
+    background-color: #F2B444;
+    color: #5C2C19;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 13px;
+    border: solid 2px #5C2C19;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+.dificuldade-opcao:hover {
+    background-color: #D97928;
+    color: white;
+    
+}
+
+/* Footer */
+
+footer {
+    background-color: #F5DAB1;
+    color: #D97928;
+    padding: 5px;
+    text-align: center;
+    border-top: solid 5px #5C2C19;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #000000;
+
+}
+
+footer p {
+    margin-top: 55px;
+    font-size: 25px;
+}

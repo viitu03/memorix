@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorix</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="shortcut icon" href="../imagens/logotransparente.png">
+    <!-- Fonte Luckiest Guy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <!-- Fonte Luckiest Guy -->
+
+</head>
+
+<body>
+
+    <header>
+        <div class="cabecalho">
+            <a href="inicio.html"><img src="../imagens/logotransparente.png" alt="memorix-logo"></a>
+            <h1>PONTOS: 0</h1>
+            <button><a href="../telalogin/login.html">ENTRAR</a></button>
+        </div>
+    </header>
+
+    <main>
+        <div class="ajuda-wrapper">
+            <div id="ajuda-icon" title="Como Jogar">?</div>
+        </div>
+        <div class="centro">
+            <a href="inicio.html">
+                <img src="../imagens/logotransparente.png" alt="memorix-logo">
+            </a>
+            <h2>Treine sua memória de forma divertida!</h2>
+            <h3>Dificuldade: Fácil</h3>
+
+            <div class="buttons-game">
+                <button id="jogar-btn">JOGAR</button>
+                <button id="dificuldade-btn">ALTERAR DIFICULDADE</button>
+            </div>
+            <div id="lista-dificuldades" class="hidden">
+                <button class="dificuldade-opcao" data-nivel="Fácil">Fácil</button>
+                <button class="dificuldade-opcao" data-nivel="Médio">Médio</button>
+                <button class="dificuldade-opcao" data-nivel="Difícil">Difícil</button>
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- Modal -->
+    <div id="ajuda-modal" class="hidden">
+        <div class="ajuda-content">
+            <span class="fechar-ajuda">&times;</span>
+            <h2>Como Jogar</h2>
+            <p>O objetivo do jogo é encontrar todos os pares de cartas iguais com o menor número de tentativas possível.
+            </p>
+            <p>Escolha a dificuldade, clique em "Jogar" e comece a desafiar sua memória!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>DESENVOLVIMENTO DE APLICAÇÃO INTERATIVA</p>
+    </footer>
+
+    <script src="inicio.js" defer></script>
+</body>
+
+
+</html>
